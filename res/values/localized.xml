@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd.
+ Copyright (C) 2010,2011 Audioboo Ltd.
+ All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<resources>
+
+  <!--
+    Main Activity's Tab labels
+  -->
+  <string-array name="main_tab_labels">
+    <item>Recent Boos</item>
+    <item>Record</item>
+    <item>Account</item>
+  </string-array>
+
+  <!--
+    Generic boo lists
+  -->
+  <!-- Author string to use when the boo was posted anonymously -->
+  <string name="boo_list_anonymous_author">The BooBot</string>
+  <string name="boo_list_generic_error">Oops! I can\'t reach the server. That makes me sad.</string>
+  <string name="boo_list_login_error">You must link the device to an Audioboo account in the settings for this to work.</string>
+  <string name="boo_list_location_error">You need to allow me to use your current location in the settings for this to work.</string>
+  <string name="boo_list_upload_progress">Uploaded: %1$.0f%%</string>
+  <string name="boo_list_upload_pending">Pending</string>
+  <string name="boo_list_upload_error">Error! Tap to try again.</string>
+  <string name="boo_list_upload_done">Successfully uploaded.</string>
+  <string name="boo_list_me">me</string>
+
+  <!--
+    Browse boos tab
+  -->
+  <!-- Name for the menu action for refreshing boos. -->
+  <string-array name="browse_boos_actions">
+    <item>Refresh</item>
+    <item>Filter</item>
+  </string-array>
+
+  <string-array name="browse_boos_filters">
+    <item>Featured Boos</item>
+    <item>Followed Boos</item>
+    <item>Recent Boos</item>
+    <item>Popular Boos</item>
+    <item>Nearby Boos</item>
+  </string-array>
+
+  <!-- Filter dialog title -->
+  <string name="browse_boos_filter_title">Filter By</string>
+
+  <!-- Hints -->
+  <string name="browse_hint_menu">The menu button reveals more actions you can take.</string>
+
+  <!-- Button labels -->
+  <string name="browse_retry">Retry</string>
+
+
+  <!--
+    Recording view
+  -->
+  <string-array name="record_menu_titles">
+    <item>Restart</item>
+    <item>Publish</item>
+  </string-array>
+
+  <!-- Recording errors - we want to report the code -->
+  <string name="record_error_message">Recording Error %1$d: please try again.
+    Try rebooting your phone. If the error persists, please report the error
+    with a desription of what you were doing when it occurred.</string>
+
+  <string name="record_error_ack">OK</string>
+
+  <!-- Toast for succesfully publishing a Boo -->
+  <string name="record_publish_success_toast">Boo Published!</string>
+
+  <!-- Toast for invalid URIs -->
+  <string name="record_invalid_uri">Invalid recording URI</string>
+
+  <!-- Adressee field -->
+  <string name="record_addressee">To: %1$s</string>
+
+  <!-- Button labels -->
+  <string name="record_label_record">Record</string>
+  <string name="record_label_pause">Pause</string>
+  <string name="record_label_resume">Resume</string>
+  <string name="record_label_restart">Restart</string>
+  <string name="record_label_publish">Publish</string>
+
+  <!-- Draft dialog -->
+  <string name="record_draft_dialog_content">Save or delete draft?</string>
+  <string name="record_draft_dialog_save">Save</string>
+  <string name="record_draft_dialog_delete">Delete</string>
+
+  <!-- Progress dialog -->
+  <string name="record_remaining_label">Time remaining:</string>
+
+  <!--
+    Boo player view
+  -->
+  <string name="boo_player_new_title">New recording</string>
+  <string name="boo_player_no_title">unnamed boo</string>
+  <string name="boo_player_no_author">Mystery User</string>
+  <string name="boo_player_author_self">me</string>
+
+
+  <!--
+    Publish view
+  -->
+  <string name="publish_activity_title">Audioboo Publish</string>
+
+  <string name="publish_label_picture">Attach A Picture</string>
+  <string name="publish_label_title">Describe Your Boo</string>
+  <string name="publish_label_tags">Tag It. Separate tags with commas, and quote
+    tags that contain a comma themselves.</string>
+  <string name="publish_label_submit">That\'s All</string>
+
+  <string name="publish_submit_text">Upload</string>
+
+  <string name="publish_image_option_title">Picture Options</string>
+
+  <!-- The order of these items is depended upon in the code -->
+  <string-array name="publish_image_options">
+    <item>Choose from gallery</item>
+    <item>Create new</item>
+    <item>Remove</item>
+  </string-array>
+
+  <!-- Toast text when something has been queued -->
+  <string name="publish_queued">Queued for upload!</string>
+  <string name="outbox_upload_kicked">Restarted uploads!</string>
+
+  <!--
+    Account view
+  -->
+  <string name="account_progress_label_status">Determining device status...</string>
+  <string name="account_progress_label_unlink">Unlinking device...</string>
+  <string name="account_progress_label_link">Processing link request...</string>
+
+  <string name="account_account_section_title">Account Name</string>
+  <string name="account_not_linked">Not Linked</string>
+  <string name="account_button_unlinked">Link Account</string>
+  <string name="account_button_linked">Unlink Account</string>
+  <string name="account_description_unlinked">Creating an account gives you a
+    special place on audioboo.fm to store &amp; share your boos, as well as
+    attaching your name &amp; photo to anything you record.</string>
+  <string name="account_description_linked">Choose unlink to link to a
+    different account.</string>
+
+  <string name="account_location_section_title">Location</string>
+  <string name="account_location_label">Use Current Location</string>
+
+  <string name="account_intro_section_title">Intro Boo</string>
+  <string name="account_intro_label">Play intro boo again</string>
+
+  <string name="account_version_format">Version: %1$s</string>
+
+  <string name="account_unlink_dialog_message">Are you sure you want to unlink
+    this device from your account?</string>
+  <string name="account_unlink_dialog_confirm">Unlink</string>
+  <string name="account_unlink_dialog_cancel">Cancel</string>
+
+  <string name="account_poll_section_title">Messages</string>
+  <string name="account_poll_prompt">Fetch interval</string>
+  <string-array name="account_poll_options">
+    <item>Never fetch</item>
+    <item>Fetch every 15 min</item>
+    <item>Fetch every half hour</item>
+    <item>Fetch every hour</item>
+    <item>Fetch every half day</item>
+    <item>Fetch every day</item>
+  </string-array>
+
+  <!--
+    Error codes and their messages. See res/values/errors.xml for details
+  -->
+  <string name="error_title">Communication error.</string>
+  <string name="error_prefix">Error details:</string>
+
+  <string-array name="error_messages">
+    <item>The server returned an empty response.</item>
+    <item>An error occurred when retrieving a response from the server.</item>
+    <item>The server did not send the expected response version.</item>
+    <item>An error occurred when trying to parse the server response.</item>
+    <item>An invalid program state was reached.</item>
+    <item>An unknown error occurred.</item>
+    <item>Enable location services to see nearby Boos.</item>
+    <item>You may only perform this action with your device linked to an Audioboo account.</item>
+    <item>You may only perform this action with your device linked to an Audioboo account.</item>
+  </string-array>
+
+  <string name="error_message_extra">Repeat your action when you are sure you
+    have an internet connection.</string>
+
+  <!-- Error message when playback ended unsuccessfully -->
+  <string name="error_message_playback">Playback error, please try again!</string>
+
+
+  <!--
+    Global dialogs
+  -->
+  <string name="gps_settings_message">You selected to tag Boos with your
+    current location, but all location sources are disabled.
+    Ignoring this conflict means your Boos will not  be tagged with a
+    location.</string>
+  <string name="gps_settings_start">Location Settings</string>
+  <string name="gps_settings_cancel">Ignore</string>
+
+  <string name="error_message_ack">OK</string>
+
+
+  <!--
+    Values for Boo title generation
+  -->
+  <string-array name="boo_title_generic">
+    <item>Lonelyboo</item>
+    <item>Perhaps its rainingboo</item>
+    <item>Waiting for a friendboo</item>
+    <item>Broadbandboo</item>
+    <item>What a lovely skirtboo</item>
+    <item>Bad hair dayboo</item>
+    <item>Fancy a quick oneboo</item>
+    <item>Anyone for tennisboo</item>
+    <item>Egg and tomato pleaseboo</item>
+    <item>Make mine a shandyboo</item>
+    <item>Don\'t I recognise youboo</item>
+    <item>Bloody circle lineboo</item>
+    <item>Confidenialityboo</item>
+    <item>Need to knowboo</item>
+    <item>Blue skyboo</item>
+    <item>Officeboo</item>
+    <item>Thanks a lotboo</item>
+    <item>Boohooboo</item>
+    <item>Wash that man right out of your hairboo</item>
+    <item>No I\'ll have vinegarboo</item>
+    <item>And she said to himboo</item>
+    <item>Absolutelyboo</item>
+    <item>There\'s a reason for thatboo</item>
+    <item>Please update your profileboo</item>
+    <item>Junk mailboo</item>
+    <item>Crikey that expensiveboo</item>
+    <item>Be back in a jiffyboo</item>
+    <item>Pass the saltboo</item>
+    <item>Remember to water the flowersboo</item>
+    <item>Didn\'t like themboo</item>
+    <item>Left then rightboo</item>
+    <item>Listening to Radio 4boo</item>
+    <item>Left to my own devicesboo</item>
+    <item>I\'m only happy when it rainsboo</item>
+    <item>Are we not menboo</item>
+    <item>Hit me baby one more timeboo</item>
+    <item>It\'s in the postboo</item>
+    <item>Didn\'t feel a thingboo</item>
+    <item>Fancy a brewboo</item>
+    <item>One slice or twoboo</item>
+    <item>Two pintsboo</item>
+    <item>Oh buggerboo</item>
+    <item>A funny thing happened on the wayboo</item>
+    <item>Sadboo</item>
+    <item>Aceboo</item>
+    <item>Strangeboo</item>
+  </string-array>
+
+  <!-- Seasonal -->
+  <string name="boo_title_spring">Springboo</string>
+  <string name="boo_title_summer">Summerboo</string>
+  <string name="boo_title_hot">Hotboo</string>
+  <string name="boo_title_fall">Fallboo</string>
+  <string name="boo_title_autumn">Autumnboo</string>
+  <string name="boo_title_winter">Winterboo</string>
+  <string name="boo_title_chilly">Chillyboo</string>
+
+  <!-- Time of day -->
+  <string name="boo_title_breakfast">Breakfastboo</string>
+  <string name="boo_title_morning">Morningboo</string>
+  <string name="boo_title_lunch">Lunchboo</string>
+  <string name="boo_title_afternoon">Afternoonboo</string>
+  <string name="boo_title_sunny">Sunnyboo</string>
+  <string name="boo_title_tea">Teaboo</string>
+  <string name="boo_title_eod">End of the dayboo</string>
+  <string name="boo_title_evening">Eveningboo</string>
+  <string name="boo_title_dark">Darkboo</string>
+  <string name="boo_title_sleepy">Sleepyboo</string>
+
+  <!-- Special -->
+  <string name="boo_title_meetings">Meetings are evilboo</string>
+  <string name="boo_title_packed_lunch">Packed lunchboo</string>
+  <string name="boo_title_way_home">Possibly on way homeboo</string>
+  <string name="boo_title_home">Hi honey I\'m homeboo</string>
+  <string name="boo_title_party">Partyboo</string>
+  <string name="boo_title_drunk">Drunkenboo</string>
+  <string name="boo_title_hung_over">Hungoverboo</string>
+
+
+  <!-- Notification related strings -->
+  <string name="notification_default_title">unnamed boo</string>
+  <string name="notification_text">by %1$s</string>
+  <string name="notification_unknown_user">Mystery User</string>
+
+
+  <!--
+    Front page related
+   -->
+
+  <!-- Main menu labels. XXX Keep in sync with main_menu_icons -->
+  <string-array name="main_menu_labels">
+    <item>Settings</item>
+    <item>Browse</item>
+    <item>My Boos</item>
+    <item>Messages</item>
+    <item>Contacts</item>
+  </string-array>
+
+  <string name="main_menu_now_playing">Now Playing</string>
+
+  <string name="main_record">Record</string>
+
+  <!--
+    MessagesActivity
+  -->
+
+  <string name="inbox_title_inbox">Inbox</string>
+  <string name="inbox_title_outbox">Outbox</string>
+
+  <string name="inbox_menu_refresh">Refresh</string>
+  <string name="inbox_menu_outbox">Outbox</string>
+  <string name="inbox_menu_inbox">Inbox</string>
+
+  <string name="inbox_outbox">Uploads</string>
+  <string name="inbox_drafts">Drafts</string>
+  <string name="inbox_sent">Sent Messages</string>
+
+  <!--
+    Placeholder strings
+  -->
+  <string name="boo_unknown_author">Mystery User</string>
+  <string name="boo_author_self">me</string>
+  <string name="boo_unknown_title">unnamed boo</string>
+
+  <!--
+    Date formatting
+   -->
+  <string-array name="date_format_single">
+    <item>%1$d year</item>
+    <item>%1$d month</item>
+    <item>%1$d week</item>
+    <item>%1$d day</item>
+    <item>%1$d hour</item>
+    <item>%1$d minute</item>
+    <item>%1$d second</item>
+  </string-array>
+
+  <string-array name="date_format_multiple">
+    <item>%1$d years</item>
+    <item>%1$d months</item>
+    <item>%1$d weeks</item>
+    <item>%1$d days</item>
+    <item>%1$d hours</item>
+    <item>%1$d minutes</item>
+    <item>%1$d seconds</item>
+  </string-array>
+
+  <string name="date_format_shortest">just now</string>
+
+  <string name="date_format">%1$s ago</string>
+
+  <!-- Boo details -->
+  <string name="details_user_not_available">Nothing is known about the Mystery User!</string>
+  <string name="details_invalid_uri">Could not open URI</string>
+  <string name="details_load_error">Error loading details</string>
+  <string name="details_play_label">Play This</string>
+  <string name="details_reply_label">Reply</string>
+  <string name="details_reply_title">Re: %1$s</string>
+
+  <!-- Contacts -->
+  <string name="contacts_title">Contacts</string>
+
+  <string name="contact_button_follow">Follow</string>
+  <string name="contact_button_unfollow">Unfollow</string>
+  <string name="contact_button_message">Send DM</string>
+
+  <string name="contact_label_boos">boos</string>
+  <string name="contact_label_favorites">favourites</string>
+  <string name="contact_label_followings">following</string>
+  <string name="contact_label_followers">followers</string>
+
+  <string name="contact_load_error">Error loading details</string>
+
+  <!-- My boos -->
+  <string name="my_boos_title">My Boos</string>
+
+  <string name="my_uploads">Uploads</string>
+  <string name="my_drafts">Drafts</string>
+  <string name="my_boos">My Boos</string>
+
+  <!-- Dispatching -->
+  <string name="dispatch_error">This URI is not recognized by Audioboo</string>
+
+  <!-- Uploading -->
+  <string name="upload_progress">Uploading Boo... %1$.0f%%</string>
+  <string name="upload_error">Upload interrupted by error</string>
+  <string name="upload_done">Successfully uploaded</string>
+
+  <!-- Intro boo -->
+  <string name="intro_boo_title">Welcome to Audioboo</string>
+  <string name="intro_boo_author">The BooBot</string>
+  <string name="intro_boo_location">Audioboo HQ</string>
+
+  <!-- Message polling -->
+  <string name="poll_title">New Audioboo message(s)</string>
+  <string name="poll_info_format">%1$d unread</string>
+</resources>

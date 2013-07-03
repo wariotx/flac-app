@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd.
+ Copyright (C) 2010,2011 Audioboo Ltd.
+ All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<resources>
+  <!-- Define standard text sizes to be used in the layouts -->
+
+  <!-- Standard text sizes -->
+  <dimen name="text_smaller">10sp</dimen>
+  <dimen name="text_small">12sp</dimen>
+  <dimen name="text_standard">15sp</dimen>
+  <dimen name="text_large">16sp</dimen>
+  <dimen name="text_larger">17sp</dimen>
+  <dimen name="text_huge">20sp</dimen>
+
+  <!-- Text sizes for particular layouts -->
+
+  <!--
+    Texts for the player view
+  -->
+  <dimen name="boo_player_title">@dimen/text_standard</dimen>
+  <dimen name="boo_player_author">@dimen/text_small</dimen>
+  <dimen name="boo_player_progress">@dimen/text_small</dimen>
+
+  <!--
+    Record view
+  -->
+  <dimen name="record_initial_countdown">120sp</dimen>
+
+  <!--
+    Recent boos view
+  -->
+  <dimen name="boo_list_item_author">@dimen/text_small</dimen>
+  <dimen name="boo_list_item_title">@dimen/text_large</dimen>
+  <dimen name="boo_list_item_location">@dimen/text_smaller</dimen>
+  <dimen name="boo_list_item_progress">@dimen/text_smaller</dimen>
+
+  <!--
+    Publish view
+  -->
+  <dimen name="publish_label">@dimen/text_standard</dimen>
+
+  <!--
+    Account view
+  -->
+  <dimen name="account_progress_label">@dimen/text_large</dimen>
+  <dimen name="account_section_label">@dimen/text_large</dimen>
+  <dimen name="account_name">@dimen/text_standard</dimen>
+  <dimen name="account_description">@dimen/text_standard</dimen>
+  <dimen name="account_location_label">@dimen/text_standard</dimen>
+
+  <!--
+    Details view
+  -->
+  <dimen name="details_author">@dimen/text_small</dimen>
+  <dimen name="details_title">@dimen/text_large</dimen>
+  <dimen name="details_age">@dimen/text_small</dimen>
+  <dimen name="details_location">@dimen/text_small</dimen>
+  <dimen name="details_tag">@dimen/text_smaller</dimen>
+
+  <!--
+    Contact details
+  -->
+  <dimen name="contact_number">65sp</dimen>
+  <dimen name="contact_label">@dimen/text_large</dimen>
+
+  <dimen name="contact_name">@dimen/text_large</dimen>
+  <dimen name="contact_description">@dimen/text_standard</dimen>
+</resources>

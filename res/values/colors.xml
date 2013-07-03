@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd.
+ Copyright (C) 2010,2011 Audioboo Ltd.
+ All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<resources>
+  <!--
+    Standard colors.
+  -->
+  <color name="bb_white_80">#ccffffff</color>
+  <color name="bb_white_69">#b2ffffff</color>
+
+  <color name="bb_black_80">#cc000000</color>
+
+  <color name="bb_gray_80">#cc888888</color>
+  <color name="bb_darkgray_80">#cc222222</color>
+
+  <color name="bb_teal">#ff2d383b</color>
+  <color name="bb_teal_dark">#ff050607</color>
+  <color name="bb_deep_blue_bright">#ff62c1d7</color>
+  <color name="bb_deep_blue_dark">#ff2e6773</color>
+  <color name="bb_deep_pink_bright">#ffb40077</color>
+  <color name="bb_deep_pink_dark">#ff93004e</color>
+
+  <color name="bb_dark_blue_dark">#ff2d383b</color>
+  <color name="bb_dark_blue_medium">#ff4b566b</color>
+
+  <color name="bb_orange">#fffb9b27</color>
+
+  <!-- Gradients -->
+  <color name="bb_darkPink">#ffc2065e</color>
+  <color name="bb_lightPink">#ffe813c4</color>
+  <color name="bb_darkBlue">#ff0628c2</color>
+  <color name="bb_lightBlue">#ff136ce8</color>
+
+  <!-- Squares -->
+  <color name="bb_mutedPink">#ffff5cc6</color>
+  <color name="bb_whitePink">#fff7bee8</color>
+  <color name="bb_mutedBlue">#ff1f9eff</color>
+  <color name="bb_whiteBlue">#ffcde7fa</color>
+
+  <!--
+  <color name="bb_palette_near_black">#ff050606</color>
+  <color name="bb_palette_">#ff24485f</color>
+  <color name="bb_palette_">#ff141b1e</color>
+  <color name="bb_palette_">#ff040407</color>
+  <color name="bb_palette_">#ff1a3153</color>
+  <color name="bb_palette_">#ffb6b6b6</color>
+  <color name="bb_palette_">#ffe3e4e5</color>
+  <color name="bb_palette_">#ff363636</color>
+  <color name="bb_palette_">#ff070707</color>
+  <color name="bb_palette_">#ff0f0f13</color>
+  <color name="bb_palette_">#ff1e1e26</color>
+  <color name="bb_palette_">#ffedc9e0</color>
+  <color name="bb_palette_">#ffb5167a</color>
+  <color name="bb_palette_">#ff001526</color>
+  <color name="bb_palette_">#ff002a4b</color>
+  <color name="bb_palette_">#00000912</color>
+
+  <color name="bb_front_page_author">#ffba337f</color>
+  <color name="bb_front_page_title">#ffbcb5b4</color>
+  <color name="bb_front_page_location">#ff6c5869</color>
+  -->
+
+  <color name="text_shadow">@color/bb_black_80</color>
+  <color name="group_label">@color/bb_black_80</color>
+
+  <!--
+    Label colors for the big, coloured buttons (used in res/color/button_label.xml)
+  -->
+  <color name="button_label_normal">@android:color/white</color>
+  <color name="button_label_normal_disable">@color/bb_gray_80</color>
+  <color name="button_label_pressed">@color/bb_white_69</color>
+  <color name="button_label_selected">@android:color/white</color>
+
+  <!--
+    Colors for the lists of boos. Also see res/color
+  -->
+  <color name="boo_list_image_background">#a1a7b2</color>
+  <color name="boo_list_error">@color/bb_black_80</color>
+
+  <!--
+    Colors for the in-list playback button
+  -->
+
+  <color name="play_pause_progress_pie">#fe8e02</color>
+
+  <!--
+    Colors for the Record view. Also see res/color
+  -->
+  <color name="record_overlay_background">@color/bb_darkgray_80</color>
+
+  <color name="record_grid_color">@color/bb_darkPink</color>
+  <color name="record_grid_background">@color/bb_mutedPink</color>
+  <color name="record_grid_bar">@color/bb_whitePink</color>
+  <color name="record_background">@color/bb_darkPink</color>
+
+  <color name="record_to_grid_color">@color/bb_darkBlue</color>
+  <color name="record_to_grid_background">@color/bb_mutedBlue</color>
+  <color name="record_to_grid_bar">@color/bb_whiteBlue</color>
+  <color name="record_to_background">@color/bb_darkBlue</color>
+
+  <color name="record_addressee">@android:color/white</color>
+  <color name="record_remaining">@color/bb_orange</color>
+
+  <!--
+    Colors for the player view
+  -->
+  <color name="boo_player_background">@color/bb_darkgray_80</color>
+  <color name="boo_player_title">@color/bb_white_80</color>
+  <color name="boo_player_author">@color/bb_white_80</color>
+  <color name="boo_player_progress">@color/bb_white_80</color>
+
+
+  <!--
+    Colors for the publish view
+  -->
+  <color name="publish_label">@color/bb_white_80</color>
+
+  <!--
+    Colors for the account view
+  -->
+  <color name="account_progress_label_light">@color/bb_white_80</color>
+  <color name="account_progress_label_dark">@color/bb_black_80</color>
+  <color name="account_section_label">@color/bb_white_80</color>
+  <color name="account_name">@color/bb_white_80</color>
+  <color name="account_description">@color/bb_white_80</color>
+  <color name="account_location_label">@color/bb_white_80</color>
+
+  <!--
+    Colors for the details view
+  -->
+  <color name="details_author">@color/bb_gray_80</color>
+  <color name="details_title">@android:color/black</color>
+  <color name="details_age">@color/bb_black_80</color>
+  <color name="details_location">@android:color/black</color>
+  <color name="details_tag">@android:color/black</color>
+
+  <!--
+    Main page
+  -->
+  <color name="main_menu_label">@android:color/white</color>
+  <color name="main_player_label">@color/bb_gray_80</color>
+  <color name="main_background">#0f0e0d</color>
+
+  <!--
+    Contact details
+  -->
+  <color name="contact_name">@android:color/white</color>
+  <color name="contact_description">@android:color/white</color>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd.
+ All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+  >
+  <!-- List view -->
+  <ListView android:id="@android:id/list"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_weight="1"
+      android:layout_marginTop="3dp"
+    />
+
+  <!-- Empty list view -->
+  <RelativeLayout android:id="@+id/contacts_empty"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_weight="1"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+      >
+
+      <!-- Flip between progress and retry button -->
+      <ViewAnimator android:id="@+id/contacts_progress"
+          android:layout_width="fill_parent"
+          android:layout_height="60dp"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="10000"
+            style="android:progressBarStyleSmall"
+          />
+
+        <Button android:id="@+id/contacts_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/browse_retry"
+            android:background="@drawable/btn_default"
+          />
+      </ViewAnimator>
+
+      <!-- Flip between logo and error bubble -->
+      <ViewAnimator android:id="@+id/contacts_error_flipper"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logotype"
+          />
+        <TextView android:id="@+id/contacts_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/popup_inline_error"
+            android:gravity="center"
+            android:text="foo"
+            android:textColor="@color/boo_list_error"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_large"
+          />
+      </ViewAnimator>
+    </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

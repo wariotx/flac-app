@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd.
+ Copyright (C) 2010,2011 Audioboo Ltd.
+ All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<resources>
+
+  <!--
+    Front page related
+  -->
+  <array name="main_menu_icons">
+    <item>@drawable/menu_settings</item>
+    <item>@drawable/menu_browse</item>
+    <item>@drawable/menu_uploads</item>
+    <item>@drawable/menu_messages</item>
+    <item>@drawable/menu_contacts</item>
+  </array>
+
+
+  <string-array name="main_menu_actions">
+    <item>fm.audioboo.application.AccountActivity</item>
+    <item>fm.audioboo.application.BrowseActivity</item>
+    <item>fm.audioboo.application.MyBoosActivity</item>
+    <item>fm.audioboo.application.MessagesActivity</item>
+    <item>fm.audioboo.application.ContactsListActivity</item>
+  </string-array>
+</resources>

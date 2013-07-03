@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd.
+ All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boo_list_background_more"
+  >
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:gravity="center"
+    >
+    <!-- Dots -->
+    <ImageView android:id="@+id/boo_list_more_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dots"
+      />
+
+    <!-- Loading -->
+    <ProgressBar android:id="@+id/boo_list_more_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:max="10000"
+        style="android:progressBarStyleSmall"
+        android:visibility="gone"
+      />
+  </RelativeLayout>
+</LinearLayout>

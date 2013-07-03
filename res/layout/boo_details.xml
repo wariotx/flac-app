@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ This file is part of Audioboo, an android program for audio blogging.
+ Copyright (C) 2011 Audioboo Ltd. All rights reserved.
+
+ Author: Jens Finkhaeuser <jens@finkhaeuser.de>
+
+ $Id$
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:audioboo="http://schemas.android.com/apk/res/fm.audioboo.application"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/boo_details"
+  >
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_weight="1"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+      >
+      <!-- Summary -->
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/selectable_frame"
+          android:orientation="horizontal"
+          android:gravity="top"
+          android:padding="5dp"
+        >
+
+        <!-- Boo thumbnail -->
+        <ImageView android:id="@+id/boo_thumb"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/anonymous_boo"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/selectable_frame"
+            android:focusable="true"
+          />
+
+        <!-- Metadata -->
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:orientation="vertical"
+         >
+
+        <!-- Author -->
+        <TextView android:id="@+id/boo_author"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/details_author"
+            android:textColor="@color/details_author"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+            android:text="@string/boo_list_anonymous_author"
+          />
+
+        <!-- Title -->
+        <TextView android:id="@+id/boo_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/details_title"
+            android:textColor="@color/details_title"
+          />
+
+        <!-- Date -->
+        <TextView android:id="@+id/boo_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/details_age"
+            android:textColor="@color/details_age"
+          />
+        </LinearLayout>
+      </LinearLayout>
+
+      <!-- Tags -->
+      <fm.audioboo.widget.LeftAlignedLayout android:id="@+id/boo_tags"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+        />
+
+      <!-- Image -->
+      <LinearLayout android:id="@+id/boo_image_container"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/selectable_frame"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:padding="5dp"
+        >
+        <ProgressBar android:id="@+id/boo_image_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="10000"
+            style="android:progressBarStyleSmall"
+          />
+
+         <ImageView android:id="@+id/boo_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/logotype"
+            android:visibility="gone"
+          />
+      </LinearLayout>
+
+      <!-- Location image -->
+      <LinearLayout android:id="@+id/boo_location_container"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:orientation="vertical"
+          android:gravity="center"
+          android:padding="5dp"
+          android:background="@drawable/selectable_frame"
+          android:focusable="true"
+        >
+        <TextView android:id="@+id/boo_location_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textSize="@dimen/details_location"
+            android:textColor="@color/details_location"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:lines="1"
+            android:singleLine="true"
+          />
+
+        <ProgressBar android:id="@+id/boo_location_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="10000"
+            style="android:progressBarStyleSmall"
+          />
+
+         <ImageView android:id="@+id/boo_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/logotype"
+            android:visibility="gone"
+          />
+      </LinearLayout>
+
+      <!-- Reply button -->
+      <Button android:id="@+id/boo_reply"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="70dp"
+          android:layout_marginRight="70dp"
+          android:text="@string/details_reply_label"
+          style="@style/button_huge_green"
+          android:visibility="gone"
+        />
+    </LinearLayout>
+  </ScrollView>
+
+  <!-- Player -->
+  <LinearLayout android:id="@+id/boo_player_container"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:orientation="vertical"
+      android:background="@color/boo_player_background"
+      android:visibility="gone"
+    >
+    <!-- Separator -->
+    <ImageView
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+      />
+
+    <!-- Player/Play Button Flipper -->
+    <ViewAnimator android:id="@+id/boo_player_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+      >
+      <fm.audioboo.widget.BooPlayerView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          audioboo:showDisclosure="false"
+        />
+      <Button android:id="@+id/boo_play"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:layout_gravity="center"
+          android:text="@string/details_play_label"
+          style="@style/button_huge_green"
+        />
+    </ViewAnimator>
+  </LinearLayout>
+</LinearLayout>
